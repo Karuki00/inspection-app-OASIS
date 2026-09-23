@@ -25,3 +25,11 @@ _ide_helper.php
 Homestead.json
 Homestead.yaml
 Thumbs.db
+
+/src-tauri/target/
+/src-tauri/gen/
+/src-tauri/binaries/*
+!/src-tauri/binaries/.gitkeep
+/storage/tunnel_url.txt
+
+/src-tauri/Cargo.lock
