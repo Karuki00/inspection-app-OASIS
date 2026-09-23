@@ -1,0 +1,404 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Hide mobile elements on desktop by default */
+.mobile-header,
+.mobile-footer {
+    display: none;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* Two-Column Layout */
+.login-wrapper {
+    display: flex;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+/* -------------------------------------------------------------------------- */
+/* LEFT BRANDED PANEL                                                         */
+/* -------------------------------------------------------------------------- */
+.branded-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F5F0E8;
+    padding: 56px 64px 48px 64px;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+/* Top Accent Header */
+.top-accent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.brand-name {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #C5A333;
+    letter-spacing: 0.08em;
+}
+
+.accent-line {
+    width: 60px;
+    height: 0;
+    border-bottom: 2px solid #D6C278;
+    border-radius: 1px;
+}
+
+/* Center Content */
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    margin: auto 0;
+}
+
+.oasis-logo {
+    width: 280px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.tagline {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #8C8478;
+    letter-spacing: 0.01em;
+}
+
+/* Bottom Copyright Text */
+.bottom-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    text-align: center;
+}
+
+.copyright {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: #8C8478;
+}
+
+.portal-subtitle {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    color: #8C8478;
+    opacity: 0.7;
+}
+
+/* -------------------------------------------------------------------------- */
+/* RIGHT FORM PANEL                                                           */
+/* -------------------------------------------------------------------------- */
+.form-panel {
+    width: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FAFAF8;
+    padding: 56px 48px 48px 48px;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+/* Form Container */
+.login-form-container {
+    width: 100%;
+    max-width: 360px;
+    margin: auto 0;
+}
+
+.login-header {
+    margin-bottom: 28px;
+}
+
+.login-title {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 34px;
+    color: #262626;
+    margin-bottom: 8px;
+}
+
+.login-subtitle {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: #8C8478;
+}
+
+/* Inputs & Labels */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-label {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #8C8478;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.form-input {
+    width: 100%;
+    height: 44px;
+    padding: 10px 14px;
+    background: #FFFFFF;
+    border: 1px solid #E5E2DC;
+    border-radius: 6px;
+    font-size: 13px;
+    color: #1A1A1A;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-input::placeholder {
+    color: #B5B0A6;
+}
+
+.form-input:focus {
+    border-color: #336B3B;
+    box-shadow: 0 0 0 3px rgba(51, 107, 59, 0.1);
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: #8C8478;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-password:hover {
+    color: #1A1A1A;
+}
+
+/* Remember Me & Forgot Link */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #8C8478;
+    cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    accent-color: #336B3B;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.forgot-link {
+    font-weight: 600;
+    font-size: 12px;
+    color: #C5A333;
+    text-decoration: none;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+/* Submit Button */
+.btn-submit {
+    width: 100%;
+    height: 46px;
+    background-color: #336B3B;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-top: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-submit:hover {
+    background-color: #28542E;
+}
+
+/* Register Link */
+.register-text {
+    text-align: center;
+    font-size: 13px;
+    color: #8C8478;
+    margin-top: 4px;
+}
+
+.register-link {
+    font-weight: 700;
+    color: #336B3B;
+    text-decoration: none;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}
+
+/* Form Bottom Footer */
+.form-footer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 12px;
+    color: #8C8478;
+}
+
+.form-footer a {
+    color: #8C8478;
+    text-decoration: none;
+}
+
+.form-footer a:hover {
+    color: #1A1A1A;
+}
+
+/* -------------------------------------------------------------------------- */
+/* MOBILE PWA STYLES (Screen width <= 768px)                                   */
+/* -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+
+    /* Hide the desktop left panel completely */
+    .branded-panel {
+        display: none !important;
+    }
+
+    /* Make the form container take full screen with the beige background */
+    .login-wrapper {
+        background-color: #F5F0E8;
+    }
+
+    .form-panel {
+        width: 100%;
+        min-height: 100vh;
+        background-color: #F5F0E8;
+        padding: 40px 24px 24px 24px;
+        justify-content: center;
+    }
+
+    /* Show mobile header */
+    .mobile-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 36px;
+    }
+
+    .mobile-logo {
+        width: 180px;
+        height: auto;
+    }
+
+    .mobile-subtitle {
+        font-weight: 700;
+        font-size: 11px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #C5A333;
+    }
+
+    /* Form Container Tweaks */
+    .login-form-container {
+        max-width: 100%;
+    }
+
+    .login-header {
+        text-align: left;
+        margin-bottom: 24px;
+    }
+
+    .login-title {
+        font-size: 24px;
+    }
+
+    /* Input Card Adjustments */
+    .form-input {
+        background-color: #FFFFFF;
+        height: 48px;
+        /* Slightly larger tap area for mobile */
+    }
+
+    .btn-submit {
+        height: 48px;
+        border-radius: 8px;
+    }
+
+    /* Hide desktop footer, show mobile assistance footer */
+    .form-footer {
+        display: none;
+    }
+
+    .mobile-footer {
+        display: block;
+        text-align: center;
+        margin-top: 24px;
+    }
+
+    .mobile-footer a {
+        font-size: 12px;
+        color: #8C8478;
+        text-decoration: none;
+    }
+}

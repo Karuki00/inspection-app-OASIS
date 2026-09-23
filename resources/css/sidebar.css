@@ -1,0 +1,122 @@
+* {
+    font-family: 'Manrope', sans-serif;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 260px;
+    height: 100vh;
+    background: #1e3325;
+    /* Dark forest green */
+    color: #ffffff;
+    padding: 24px 16px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.sidebar-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 32px;
+    padding: 0 8px;
+}
+
+.sidebar-logo img {
+    width: 36px;
+    height: 36px;
+}
+
+.sidebar-logo-text h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+}
+
+.sidebar-logo-text span {
+    font-size: 10px;
+    color: #a3b899;
+    letter-spacing: 0.5px;
+}
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 14px;
+    text-decoration: none;
+    color: #a3b899;
+    font-size: 14px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.sidebar-item-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.sidebar-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+}
+
+.sidebar-item.active {
+    background: #2b4534;
+    color: #ffffff;
+    font-weight: 500;
+    position: relative;
+}
+
+/* Gold active indicator bar on right side of link */
+.sidebar-item.active::after {
+    content: '';
+    position: absolute;
+    right: 8px;
+    width: 3px;
+    height: 16px;
+    background: #c5a059;
+    border-radius: 2px;
+}
+
+.sidebar-bottom {
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.sidebar-user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.sidebar-user img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.sidebar-user-info p {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.sidebar-user-info span {
+    font-size: 11px;
+    color: #8fa585;
+}
